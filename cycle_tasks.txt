@@ -1,0 +1,4 @@
+# This file intentionally contains a cycle for testing cycle detection.
+A 2 5 C
+B 3 6 A
+C 1 7 B

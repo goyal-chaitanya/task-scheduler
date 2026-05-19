@@ -1,0 +1,12 @@
+# Format:
+# task_id duration priority dependencies
+# Use "-" when a task has no dependencies.
+# Multiple dependencies are comma-separated without spaces.
+
+DesignDB 3 8 -
+BuildAPI 5 9 DesignDB
+AuthModule 4 10 DesignDB
+Frontend 6 7 BuildAPI,AuthModule
+Testing 3 9 Frontend
+Deploy 2 10 Testing
+Documentation 2 5 DesignDB
