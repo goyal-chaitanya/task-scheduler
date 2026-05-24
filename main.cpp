@@ -207,7 +207,7 @@ public:
 
     void printOrder(const string& title, const vector<string>& order) const {
         cout << title << '\n';
-        cout << "--------------------------------------------------\n";
+
         for (size_t i = 0; i < order.size(); ++i) {
             const Task& task = tasks.at(order[i]);
             cout << i + 1 << ". " << task.id
